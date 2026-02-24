@@ -12,8 +12,8 @@ abs() DONE
 min() DONE
 max() Done
 sum() Done
-list()
-range()
+list() DONE
+range() Done
 
 '''
 # print() - display the provided input
@@ -85,3 +85,4 @@ print(even_numbers)
 
 odd_numbers = list(range(1, 101, 2))
 print(odd_numbers)
+
