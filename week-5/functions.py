@@ -7,6 +7,8 @@ print()
 input()
 '''
 from countries import countries
+from pprint import pprint
+pprint(countries)
 
 def do_something(txt):
     return f'I am {txt}'
