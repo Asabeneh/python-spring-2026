@@ -1,41 +1,32 @@
 '''
-Function - is a block of code that performs a certain task.
+
+Functions - Builtin and custom functions
+Modules
 
 
-len()
-print()
-input()
 '''
-# from countries import countries
-import sys 
 from countries import countries
 
-from pprint import pprint
-
-pprint(countries)
-
-def do_something(txt):
-    return f'I am {txt}'
-
-
-print(do_something('teaching'))
-print(do_something('playing'))
-print(do_something('learning'))
-
-def add_two_numbers(a, b):
-    return a + b 
-
-
-print(add_two_numbers(10, 20))
-print(add_two_numbers(10, 90))
-print(add_two_numbers(10, -10))
-
-
 def make_square(n):
-    return n ** 2
+    return n ** 2 
 
-print(make_square(10))
-print(make_square(5))
+
+def add_two_nums (a, b):
+    return a  + b 
+
+
+def sum_all_nums(*args):
+    is_true = all(isinstance(item, int) for item in args)
+    if is_true:
+        return sum(args)
+    else:
+        return 'You have invalid input'
+    
+
+def find_countries_pattern (pattern):
+    return [country for country in countries if pattern in country]
+
+
 
 def number_guessing_game ():
     import random
@@ -74,17 +65,3 @@ def find_countries_with_two_words(lst):
         if len(words) > 1:
             new_lst.append(country)
     return new_lst
-
-print(find_countries_with_two_words(countries))
-
-
-def find_stan_countries(lst):
-    new_lst = []
-    for country in lst:
-        if 'stan' in country:
-            new_lst.append(country)
-    return new_lst
-
-
-print(find_stan_countries(countries))
-
