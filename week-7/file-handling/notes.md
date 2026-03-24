@@ -1,10 +1,10 @@
 # Next Week
-- Python Type Errors
-- Exception Handling
+
 - Python Date time
 - Set, Tuples
-- File handling
+- File handling - Mostly completed
 - Regular expression 
+- Object Oriented Programming
 
 
 More resources:
